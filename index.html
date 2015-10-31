@@ -1,27 +1,28 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
-		/*$("button").click(function(){
-			alert("in button");
-			$.getJSON("Movies.json", function(data){
-				alert("Json opened");
-				alert(JSON.stringify());
-			});
-		});*/
+		var movies;
 		$(window).load(function() {
 			alert("load");
 			$.getJSON("Movies.json",function(data){
 				alert(JSON.stringify(data));
+				movies=data;
 			});
+		});
+		$("button").click(function(){
+			$("p").html(movies.Movies[0].name);
 		});
 	});
 	</script>
 </head>
 
 <body>
-	<button>Click</button>
+	<h1>ReKoMend</h1>
+	<input type="text" name="MovieName"><br>
+	<button>Submit</button>
 	<p></p>
 </body>
 </html>
