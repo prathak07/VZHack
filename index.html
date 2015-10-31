@@ -1,0 +1,27 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		/*$("button").click(function(){
+			alert("in button");
+			$.getJSON("Movies.json", function(data){
+				alert("Json opened");
+				alert(JSON.stringify());
+			});
+		});*/
+		$(window).load(function() {
+			alert("load");
+			$.getJSON("Movies.json",function(data){
+				alert(JSON.stringify(data));
+			});
+		});
+	});
+	</script>
+</head>
+
+<body>
+	<button>Click</button>
+	<p></p>
+</body>
+</html>
