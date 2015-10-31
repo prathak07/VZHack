@@ -1,5 +1,5 @@
 {
-  "Movies": {
+  "Movies":
     [
       {
         "name": "Interstellar",
@@ -14,5 +14,4 @@
         "category": "SCIFI"
       }
     ]
-  }
 }
