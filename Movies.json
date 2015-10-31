@@ -1,0 +1,18 @@
+{
+  "Movies": {
+    [
+      {
+        "name": "Interstellar",
+        "category": "SCIFI"
+      },
+      {
+        "name": "The Notebook",
+        "category": "Romantic"
+      },
+      {
+        "name": "Back to the Future",
+        "category": "SCIFI"
+      }
+    ]
+  }
+}
