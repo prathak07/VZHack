@@ -29,7 +29,7 @@
 			var adsValues = "";
 			for(i=0;i<ads.length;i++){
 				adsValues += ads[i]; 
-				adsValues += ", ";
+				adsValues += "<br>";
 			}
 			//alert(adsValues);
 			$("#ads").html(adsValues);
@@ -37,7 +37,7 @@
 			var movsValues = "";
 			for(i=0;i<movs.length;i++){
 				movsValues += movs[i]; 
-				movsValues += ", ";
+				movsValues += "<br>";
 			}
 			//alert(movsValues);
 			$("#movs").html(movsValues);
@@ -48,12 +48,14 @@
 
 <body>
 	<h1>ReKoMend</h1>
+	<h2>Enter the user type</h2>
 	<input type="text" id="Users" val="Enter User Name"><br>
-	<button>Submit</button>
+	<button class="myButton">Submit</button>
+	<h5>CATEGORY</h5>
 	<p id="cat"></p>
-	<p>ADVERTS</p>
+	<h5>ADVERTS</h5>
 	<p id="ads"></p>
-	<p>MOVIES</p>
+	<h5>MOVIES</h5>
 	<p id="movs"></p>
 </body>
 </html>
