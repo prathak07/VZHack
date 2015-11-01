@@ -6,30 +6,30 @@
 	$(document).ready(function(){
 		var json;
 		$(window).load(function() {
-			alert("load");
+			//alert("load");
 			$.getJSON("Movies.json",function(data){
-			alert("here2");
-			alert(JSON.stringify(data));
+			//alert("here2");
+			//alert(JSON.stringify(data));
 			json=data;
 			});
 		});
 		$("button").click(function(){
-			alert("here");
+			//alert("here");
 			var movie = $('#MovieName').val();
-			alert(movie);
+			//alert(movie);
 			var category = json["Movies"][movie];
-			alert(category);
-			$("p").html(category);
+			//alert(category);
+			$("#cat").html(category);
 			var ads = json["Ads"][category];
-			alert(ads);
+			//alert(ads);
 			var i=0;
 			var adsValues = "";
 			for(i=0;i<ads.length;i++){
 				adsValues += ads[i]; 
-				adsValues += " ";
+				adsValues += ", ";
 			}
-			alert(adsValues);
-			$("p").html(adsValues);
+			//alert(adsValues);
+			$("#ads").html(adsValues);
 		});
 	});
 	</script>
@@ -37,8 +37,9 @@
 
 <body>
 	<h1>ReKoMend</h1>
-	<input type="text" id="MovieName"><br>
+	<input type="text" id="MovieName" val="Enter Movie Name"><br>
 	<button>Submit</button>
-	<p></p>
+	<p id="cat"></p>
+	<p id="ads"></p>
 </body>
 </html>

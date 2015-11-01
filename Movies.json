@@ -2,11 +2,13 @@
   "Movies":
     {
         "Interstellar": "SCIFI",
+        "Back to the Future": "SCIFI",
         "The Notebook": "Romantic",
-        "Back to the Future": "SCIFI"
+        "Walk to Remember": "Romantic"
     },
     "Ads":
     {
-    	"SCIFI": ["maggii","noodles"]
+    	"SCIFI": ["Microsoft Hololens","Google Self Driving Cars","Tesla HyperLoop"],
+        "Romantic": ["CloseUp","Airtel"]
     }
 }
