@@ -1,11 +1,11 @@
 {
-  "Movies":
-    {
-        "Interstellar": "SCIFI",
-        "Back to the Future": "SCIFI",
-        "The Notebook": "Romantic",
-        "Walk to Remember": "Romantic"
-    },
+	"Users":
+	{
+		"Father": "SCIFI",
+		"Mother": "Romantic",
+		"Kid": "SCIFI",
+		"Guest": "Romantic"
+	},
     "Ads":
     {
     	"SCIFI": ["Microsoft Hololens","Google Self Driving Cars","Tesla HyperLoop"],
@@ -15,5 +15,5 @@
     {
         "SCIFI": ["Interstellar","Back to the Future"],
         "Romantic": ["The Notebook","Walk to Remember"]
-    }
+    },
 }
