@@ -15,9 +15,9 @@
 		});
 		$("button").click(function(){
 			//alert("here");
-			var movie = $('#MovieName').val();
-			//alert(movie);
-			var category = json["Movies"][movie];
+			var User = $('#Users').val();
+			//alert(User);
+			var category = json["Users"][User];
 			//alert(category);
 			$("#cat").html(category);
 			var ads = json["Ads"][category];
@@ -47,7 +47,7 @@
 
 <body>
 	<h1>ReKoMend</h1>
-	<input type="text" id="MovieName" val="Enter Movie Name"><br>
+	<input type="text" id="Users" val="Enter User Name"><br>
 	<button>Submit</button>
 	<p id="cat"></p>
 	<p>ADVERTS</p>
