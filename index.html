@@ -21,7 +21,9 @@
 			//alert(category);
 			$("#cat").html(category);
 			var ads = json["Ads"][category];
+			var movs = json["Movs"][category];
 			//alert(ads);
+			//alert(movs);
 			var i=0;
 			var adsValues = "";
 			for(i=0;i<ads.length;i++){
@@ -30,6 +32,14 @@
 			}
 			//alert(adsValues);
 			$("#ads").html(adsValues);
+			var j=0;
+			var movsValues = "";
+			for(i=0;i<movs.length;i++){
+				movsValues += movs[i]; 
+				movsValues += ", ";
+			}
+			//alert(movsValues);
+			$("#movs").html(movsValues);
 		});
 	});
 	</script>
@@ -40,6 +50,9 @@
 	<input type="text" id="MovieName" val="Enter Movie Name"><br>
 	<button>Submit</button>
 	<p id="cat"></p>
+	<p>ADVERTS</p>
 	<p id="ads"></p>
+	<p>MOVIES</p>
+	<p id="movs"></p>
 </body>
 </html>
