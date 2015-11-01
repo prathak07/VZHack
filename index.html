@@ -4,16 +4,32 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
-		var movies;
+		var json;
 		$(window).load(function() {
 			alert("load");
 			$.getJSON("Movies.json",function(data){
-				alert(JSON.stringify(data));
-				movies=data;
+			alert("here2");
+			alert(JSON.stringify(data));
+			json=data;
 			});
 		});
 		$("button").click(function(){
-			$("p").html(movies.Movies[0].name);
+			alert("here");
+			var movie = $('#MovieName').val();
+			alert(movie);
+			var category = json["Movies"][movie];
+			alert(category);
+			$("p").html(category);
+			var ads = json["Ads"][category];
+			alert(ads);
+			var i=0;
+			var adsValues = "";
+			for(i=0;i<ads.length;i++){
+				adsValues += ads[i]; 
+				adsValues += " ";
+			}
+			alert(adsValues);
+			$("p").html(adsValues);
 		});
 	});
 	</script>
@@ -21,7 +37,7 @@
 
 <body>
 	<h1>ReKoMend</h1>
-	<input type="text" name="MovieName"><br>
+	<input type="text" id="MovieName"><br>
 	<button>Submit</button>
 	<p></p>
 </body>
