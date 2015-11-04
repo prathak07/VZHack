@@ -1,19 +1,29 @@
 {
 	"Users":
 	{
-		"Father": "SCIFI",
-		"Mother": "Romantic",
-		"Kid": "SCIFI",
-		"Guest": "Romantic"
+		"Father": "Adventure",
+		"Mother": "Drama",
+		"Kid": "Animation",
+		"Guest1": "Comedy",
+		"Guest2": "SCIFI",
+		"Guest3": "Action"
 	},
     "Ads":
     {
-    	"SCIFI": ["Microsoft Hololens","Google Self Driving Cars","Tesla HyperLoop"],
-        "Romantic": ["CloseUp","Airtel"]
+    	"Action": ["Lexus: Amazing in Motion","GE: Brilliant Machines","Honda: Inner Beauty","Red Bull: Transforming Formula 1","Three: The Big Fish"],
+        "Adventure": ["Vital MTB","Wiggle Cycles","Robinsons Squash'd","Hyundai: Creta","Adidas"],
+		"Animation": ["New York Times: Modern Love","Yokahoma: Orange","Hyundai: Metaphors","Seneca College","Ripple: The Future of Money"],
+		"Comedy": ["Apple, (Stuffed)","Skittles, (Piñata)","Cadbury, (Gorilla)","Reebok, (Terry Tate)"],
+		"Drama": ["Dove: Real Beauty Sketches","RAM: Farmer","Guinness: Basketball","Geico: Hump Day","Nike: Possibilities"],
+		"SCIFI": ["Microsoft Hololens","Google Self Driving Cars","Tesla HyperLoop","LG: So Real It's Scary","Google: Project Glass"]
     },
     "Movs":
     {
-        "SCIFI": ["Interstellar","Back to the Future"],
-        "Romantic": ["The Notebook","Walk to Remember"]
+        "Action": ["Mad Max: Fury Road","Furious 7","Kingsman: The Secret Service","Taken 3","The Bourne Supremacy"],
+        "Adventure": ["Jurassic World","The Walk","Everest","Skyfall","Harry Potter and the Deathly Hallows: Part 2"],
+		"Animation": ["Inside out","Minions","Finding Nemo","Big Hero 6","Kung Fu Panda 3"],
+		"Comedy": ["The Intern","Let's Rap","Johnny Walker","Ovum","Life Is Beautiful"],
+		"Drama": ["Crimson Peak","Bridge of Spies","Macbeth","Whiplash","Gone Girl"],
+		"SCIFI": ["Interstellar","Back to the Future","The Martian","Guardians of the Galaxy","A Clockwork Orange"]
     }
 }
